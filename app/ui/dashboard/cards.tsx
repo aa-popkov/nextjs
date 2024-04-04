@@ -37,15 +37,16 @@ export default async function CardWrapper() {
     );
 }
 
-export function Card({
-                         title,
-                         value,
-                         type,
-                     }: {
-    title: string;
-    value: number | string;
-    type: 'invoices' | 'customers' | 'pending' | 'collected';
-}) {
+export function Card(
+    {
+        title,
+        value,
+        type,
+    }: {
+        title: string;
+        value: number | string;
+        type: 'invoices' | 'customers' | 'pending' | 'collected';
+    }) {
     const Icon = iconMap[type];
 
     return (
